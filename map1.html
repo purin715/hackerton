@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_bcfde25a91be4e298f005def4b6ce22d {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_bcfde25a91be4e298f005def4b6ce22d" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_bcfde25a91be4e298f005def4b6ce22d = L.map(
+        'map_bcfde25a91be4e298f005def4b6ce22d', {
+        center: [35.21011111, 126.85128059999998],
+        zoom: 18,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_d4aa19d319dd4af2a86336515144c9cf = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_bcfde25a91be4e298f005def4b6ce22d);
+    
+        var marker_04781a25dad84eec83f42b68b2608bcf = L.marker(
+            [35.21011111, 126.85128059999998],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_bcfde25a91be4e298f005def4b6ce22d);
+        
+    
+
+                var icon_9639e405c3b24d68beb94430bdb70715 = L.AwesomeMarkers.icon({
+                    icon: 'heart',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_04781a25dad84eec83f42b68b2608bcf.setIcon(icon_9639e405c3b24d68beb94430bdb70715);
+            
+    
+        marker_04781a25dad84eec83f42b68b2608bcf.bindTooltip(
+            `<div>`
+            + `첨단생활체육공원` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_150e0c15294444a2830b0711756e4479 = L.marker(
+            [35.21413190553253, 126.84675427388692],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_bcfde25a91be4e298f005def4b6ce22d);
+        
+    
+
+                var icon_5a7563bf28284ea68193410a393a6ff5 = L.AwesomeMarkers.icon({
+                    icon: 'flag',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_150e0c15294444a2830b0711756e4479.setIcon(icon_5a7563bf28284ea68193410a393a6ff5);
+            
+    
+            var popup_b4a1b02911ce45d0a0d3209b5edadfb4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1b69cd34151543fc85b1b00251a55276 = $(`<div id="html_1b69cd34151543fc85b1b00251a55276" style="width: 100.0%; height: 100.0%;">동글동글 키즈카페</div>`)[0];
+                popup_b4a1b02911ce45d0a0d3209b5edadfb4.setContent(html_1b69cd34151543fc85b1b00251a55276);
+            
+
+            marker_150e0c15294444a2830b0711756e4479.bindPopup(popup_b4a1b02911ce45d0a0d3209b5edadfb4)
+            ;
+
+            
+        
+    
+        marker_150e0c15294444a2830b0711756e4479.bindTooltip(
+            `<div>`
+            + `동글동글 키즈카페` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b361b7d5069d4321b253a158fd532547 = L.marker(
+            [35.21413190553253, 126.84156772020454],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_bcfde25a91be4e298f005def4b6ce22d);
+        
+    
+
+                var icon_45483974a61f4ab896ca6c795e3afa2f = L.AwesomeMarkers.icon({
+                    icon: 'flag',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b361b7d5069d4321b253a158fd532547.setIcon(icon_45483974a61f4ab896ca6c795e3afa2f);
+            
+    
+            var popup_86805174518d4c6284ac4e0bb281dba6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_80f60d90a930439b9ff6b88cfa07e8f2 = $(`<div id="html_80f60d90a930439b9ff6b88cfa07e8f2" style="width: 100.0%; height: 100.0%;">첨단놀이랜드</div>`)[0];
+                popup_86805174518d4c6284ac4e0bb281dba6.setContent(html_80f60d90a930439b9ff6b88cfa07e8f2);
+            
+
+            marker_b361b7d5069d4321b253a158fd532547.bindPopup(popup_86805174518d4c6284ac4e0bb281dba6)
+            ;
+
+            
+        
+    
+        marker_b361b7d5069d4321b253a158fd532547.bindTooltip(
+            `<div>`
+            + `첨단놀이랜드` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_1e30c03a624f42b4b4214220e2b73f22 = L.marker(
+            [35.21413190553253, 126.80826677790283],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_bcfde25a91be4e298f005def4b6ce22d);
+        
+    
+
+                var icon_c8a0ebb1e1ea41ccb55bb077be8bae88 = L.AwesomeMarkers.icon({
+                    icon: 'flag',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1e30c03a624f42b4b4214220e2b73f22.setIcon(icon_c8a0ebb1e1ea41ccb55bb077be8bae88);
+            
+    
+            var popup_c04b15bda0ca4c968c3cdc0daca488ac = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_aaef501beeb74716be626b7df6ef0eed = $(`<div id="html_aaef501beeb74716be626b7df6ef0eed" style="width: 100.0%; height: 100.0%;">플레이랜드 수완점</div>`)[0];
+                popup_c04b15bda0ca4c968c3cdc0daca488ac.setContent(html_aaef501beeb74716be626b7df6ef0eed);
+            
+
+            marker_1e30c03a624f42b4b4214220e2b73f22.bindPopup(popup_c04b15bda0ca4c968c3cdc0daca488ac)
+            ;
+
+            
+        
+    
+        marker_1e30c03a624f42b4b4214220e2b73f22.bindTooltip(
+            `<div>`
+            + `플레이랜드 수완점` + `</div>`,
+            {"sticky": true}
+        );
+        
+</script>
