@@ -1,0 +1,205 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
+@font-face {
+    font-family: 'KoPubDotumMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/KoPubDotumMedium.woff') format('woff');
+    font-weight: normal; font-style: normal;
+}
+
+
+body { font-family: 'Orbitron', sans-serif; font-size: 14px; color: #333; }
+
+
+
+/*===== 전체 프레임 =====*/
+#wrap {
+    position: fixed; left: 0; top: 0; width: 100%; height: 100%;
+    background: url(../imgs/bg_afternoon.jpg) no-repeat center center;
+    background-size: cover; transition: all 2s ease-in-out;
+}
+
+
+
+/*===== 로고 =====*/
+#wrap h1 {
+    position: fixed; left: 50px; top: 30px; width: 90px; height: 80px;
+    background: url(../imgs/mark1.png);
+}
+
+
+
+/*===== 주메뉴 =====*/
+#gnb { position: fixed; right: 250px; top: 50px; }
+#gnb li { float: left; margin-left: 30px; }
+#gnb li a { color: #666; font-weight: 600; }
+
+
+
+/*===== SNS =====*/
+#sns { position: fixed; right: 50px; top: 45px; }
+#sns li { float: left; margin-left: 20px; }
+#sns li a { font-size: 20px; color: #555; }
+
+
+
+/*===== 텍스트 박스 =====*/
+article { position: fixed; left: 500px; top: 40%; width: 450px; height: 90px; }
+article h3.course { display: block; font-family: 'KoPubDotumMedium'; font-size: 50px; color: black; font-weight: 600; }
+article h3 strong { color: dimgray; font-weight: 600; }
+article h3.tourspot, h3.click { display: none; }
+article p { font-size: 12px; }
+.search input {
+    position: relative; width: 350px; height: 50px; left: 1200px; top: 430px; border-color: black;
+    font-family: 'KoPubDotumMedium'; font-size: 30px; text-align: center;
+}
+.search button {
+    position: absolute; width: 60px; height: 50px; background: black; left: 1550px; top: 430px; transition: 0.5s;
+    color: white; font-family: 'KoPubDotumMedium'; font-size: 5px; text-align: center; color: white;
+}
+.search button:hover { background: white; color: black; }
+
+
+
+/*===== 모바일 영역 =====*/
+figure {
+    position: fixed; right: 0; top: 200px; width: 920px; height: 750px;
+    background: url(../imgs/phone_afternoon.png) no-repeat;
+    transition: all 2s ease-in-out;
+}
+figure p {
+    position: absolute; left: 135px; top: 100px; width: 545px; height: 310px; padding: 100px 0 0 50px; 
+    font-size: 64px; color: rgba(5,20,85,0.6); font-weight: 600; letter-spacing: 1px;
+    overflow: hidden;
+}
+
+
+
+/*===== 테마 변경 버튼 =====*/
+nav { position: fixed; left: 6%; bottom: 70px; width: 88%; }
+nav li { float: left; width: 50%; }
+nav li:first-child a {
+    width: 100%; height: 35px; margin: 0 auto; padding: 2px 42%;
+    font-family: 'Orbitron';
+    font-size: 24px; color: #666; font-weight: 600; letter-spacing: 3px;
+    background: rgba(255,255,255,0.5); z-index: 1;
+    transition: all 0.5s ease-in;
+}
+nav li:nth-child(2) a {
+    width: 100%; height: 35px; margin: 0 auto; padding: 2px 39.5%;
+    font-family: 'Orbitron';
+    font-size: 24px; color: #666; font-weight: 600; letter-spacing: 3px;
+    background: rgba(255,255,255,0.5); z-index: 1;
+    transition: all 0.5s ease-in;
+}
+nav li:hover a, nav li.on a { color: #ddd; background: rgba(0,0,0,0.7); }
+
+
+
+/*===== 풀 스크린 배경 구름 =====*/
+#wrap>img:nth-child(1) {
+    position: absolute; left: -1200px; top: 0; opacity: 0.8;
+    animation: ani1 110s linear infinite;
+}
+#wrap>img:nth-child(2) {
+    position: absolute; left: 0; top: 30px; opacity: 0.8;
+    animation: ani2 100s linear infinite;
+}
+
+
+
+/*===== 모바일 배경 구름 =====*/
+figure p>img.cl1 {
+    position: absolute; left: -600px; top: 30px; width: 600px; opacity: 0.8;
+    animation: ani3 110s linear infinite; z-index: 4;
+}
+figure p>img.cl2 {
+    position: absolute; left: 0; top: 20px; width: 700px; opacity: 0.8;
+    animation: ani4 100s linear infinite; z-index: 4;
+}
+
+
+
+/*===== 구름 모션 =====*/
+@keyframes ani1 { 0% { left: -1200px; } 100% { left: 1950px; } }
+@keyframes ani2 {
+    0% { left: 0; }
+    50% { left: 1950px; opacity: 0; } 
+    50.001% { left: -1840px; opacity: 0.8; }
+    100% { left: 0; }
+}
+@keyframes ani3 { 0% { left: -600px; } 100% { left: 540px; } }
+@keyframes ani4 {
+    0% { left: 0; }
+    50% { left: 540px; opacity: 0; } 
+    50.001% { left: -700px; opacity: 0.8; }
+    100% { left: 0; }
+}
+
+
+/*===== 코스 추천 =====*/
+#wrap.COURSE { background: url(../imgs/bg_afternoon.jpg); }
+#wrap.COURSE h1 { background: url(../imgs/mark1.png); }
+#wrap.COURSE h3.tourspot, h3.click { display: none; }
+#wrap.COURSE h3.course { display: block; }
+#wrap.COURSE .search input { display: block; }
+#wrap.COURSE .search button { display: block; }
+#wrap.COURSE #gnb a, #wrap.afternoon #sns i { color: #444; }
+#wrap.COURSE figure { background: url(../imgs/phone_afternoon.png); }
+#wrap.COURSE article h3 { color: rgba(0,0,0,0.6); }
+#wrap.COURSE article h3 strong { color: rgba(0,0,0,0.8); }
+
+
+/*===== 전체 관광지 =====*/
+#wrap.TOURSPOT { background: url(../imgs/bg_morning.jpg); }
+#wrap.TOURSPOT h1 { background: url(../imgs/mark1.png); }
+#wrap.TOURSPOT h3.course { display: none; }
+#wrap.TOURSPOT h3.tourspot { display: block; font-family: 'KoPubDotumMedium'; font-size: 50px; color: black; font-weight: 600; width: 330px; }
+#wrap.TOURSPOT h3.click { display: block; }
+#wrap.TOURSPOT h3.click a {
+    width: 120px; height: 50px; background: rgba(0,0,0,0.5); color: white; font-size: 22px; font-weight: 600;
+    border-radius: 40px; padding: 11px 23px; margin-left: 70px; margin-top: 20px; transition: 0.5s;
+    box-shadow: 0 0 5px 3px rgba(0,0,0,0.1);
+}
+#wrap.TOURSPOT h3.click a:hover { background: white; color: rgba(0,0,0,0.5); }
+#wrap.TOURSPOT h3.tourspot strong { color: dimgray; font-weight: 600; }
+#wrap.TOURSPOT .search input { display: none; }
+#wrap.TOURSPOT .search button { display: none; }
+#wrap.TOURSPOT #gnb a, #wrap.morning #sns i { color: #444; }
+#wrap.TOURSPOT figure {
+    width: 800px; height: 550px; background: url(../imgs/googlemap.png); right: 250px; top: 25%;
+    border-radius: 40px; box-shadow: 0 0 10px 5px rgba(0,0,0,0.2);
+}
+#wrap.TOURSPOT article h3 { color: rgba(0,0,0,0.6); }
+#wrap.TOURSPOT article h3 strong { color: rgba(0,0,0,0.8); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
